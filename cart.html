@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+</head>
+<style>
+    body {
+        background-color: gray
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .logo img {
+        height: 120px;
+        width: 150px;
+    }
+    
+    h1 {
+        text-shadow: 2px 2px 5px red;
+        color: black;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    .cart-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .cart-item {
+        width: 200px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+    }
+    
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .previous {
+        background-color: #f1f1f1;
+        color: black;
+    }
+    
+    .cart-item img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .items-count {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .cart-items {
+        margin-bottom: 20px;
+    }
+    
+    button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+    }
+    
+    .nav a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+    }
+    
+    .nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    /* Styling the logo */
+    /* Styling the navigation links */
+    
+    .nav-links {
+        background-color: transparent !important;
+        list-style: none;
+        display: flex;
+        font-size: 30px;
+    }
+    
+    .nav-links li {
+        margin-right: 30px;
+    }
+    
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+    }
+    /* Styling hover effect for navigation links */
+    
+    .nav-links li a:hover {
+        color: black;
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo2.png" alt="logo">
+
+        </div>
+        <ul class="nav-links">
+            <li><a href="home1.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <center>
+            <h1>Cart</h1>
+        </center>
+        <div class="cart-gallery">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="items-count">
+            <h2>
+                <p>Total Items: <span id="totalItems">0</span></p>
+                <h2>
+        </div>
+        <div class="cart-items">
+            <!-- List of items added to cart will be dynamically added here -->
+        </div>
+        <button id="orderNow">Order Now</button><br>
+        <button id="addToFavorites">Add to Favorites</button>
+    </div>
+
+    <script src="script2.js"></script>
+    <center><a href="index.html" class="previous">&laquo; Back</a></center>
+    </center>
+</body>
+
+</html>

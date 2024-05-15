@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+</head>
+<style>
+body{
+background-color: gray;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align:center;
+    color:white;
+font-size: 20px;
+
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-link:hover {
+    background-color: #0056b3;
+}
+nav {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+} 
+ .nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+/* Styling the logo */
+.logo img {
+  height: 120px;
+width:150px;
+}
+
+/* Styling the navigation links */
+.nav-links {
+background-color: transparent !important;
+    list-style: none;
+    display: flex;
+ font-size: 30px;
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling hover effect for navigation links */
+.nav-links li a:hover {
+    color: black;
+}
+</style>
+<body>
+<nav>
+            <div class="logo">
+               <img src="logo2.png" alt="logo"> 
+               
+            </div>
+            <ul class="nav-links">
+                <li><a href="home1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div id="map"></div>
+        <div class="contact-details">
+            <ul>
+                <li>Email: example@example.com</li>
+                <li>Phone: +1 234 567 890</li>
+                <li>Address: 123 Street, City, Country</li>
+            </ul>
+            <div class="social-media">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+    <!-- Include Google Maps API script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+<center><a href="index.html" class="previous">&laquo; Back</a></center>
+</center>
+</body>
+</html>
